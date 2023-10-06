@@ -29,7 +29,8 @@ header {
     display: none;
 }
 
-button.meio:active div.menu-dropdown {
+button.meio:hover div.menu-dropdown {
+    position: absolute;
     display: block;
 }
 
@@ -39,6 +40,11 @@ main{
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 0, 0, 0.405);
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .navEsquerdo{
@@ -68,11 +74,17 @@ main{
 
 @media screen and (max-width:600px) {
     .main {
-        flex-direction: column;
+        display: column;
     }
     .navEsquerdo {
-        display: row;
-        background-color: #181311;
+        height: 100px;
+        width: 100vw;
+        display: flex;
+        flex-direction: row ;        
+    }
+
+    .conteudo {
+        height: 10px;
     }
    
 
