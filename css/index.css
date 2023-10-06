@@ -73,8 +73,8 @@ a {
 }
 
 @media screen and (max-width:600px) {
-    .main {
-        display: column;
+    main {
+        display: block;
     }
     .navEsquerdo {
         height: 100px;
@@ -82,9 +82,10 @@ a {
         display: flex;
         flex-direction: row ;        
     }
+    .conteudo .article .section {
 
-    .conteudo {
-        height: 10px;
+        height: 100px;
+        width: 100px;
     }
    
 
